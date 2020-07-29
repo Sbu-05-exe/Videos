@@ -1,9 +1,10 @@
 import React from 'react';
 import VideoItem from './VideoItem';
 
-const VideoList = ({videos, onVideoSelect}) => {
+const VideoList = ({onVideoSelect, videos}) => {
 
 	const RenderedList = videos.map((video) => {
+
 		return <VideoItem 
 			onVideoSelect={onVideoSelect} 
 			video={video} 
